@@ -46,41 +46,178 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-success-backgroundv2: var(--success-backgroundv2);
+  --color-success-background: var(--success-background);
+  --color-success-border: var(--success-border);
+
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-warning-background: var(--warning-background);
+  --color-warning-border: var(--warning-border);
+
+  --color-destructive-background: var(--destructive-background);
+  --color-destructive-border: var(--destructive-border);
+
+  --color-blue-background: var(--blue-background);
+  --color-blue-border: var(--blue-border);
+  --color-blue-subtle: var(--blue-subtle);
+
+  --color-calories: var(--calories);
+  --color-calories-background: var(--calories-background);
+
+  --color-protein: var(--protein);
+  --color-protein-background: var(--protein-background);
+
+  --color-carbs: var(--carbs);
+  --color-carbs-background: var(--carbs-background);
+
+  --color-fat: var(--fat);
+  --color-fat-background: var(--fat-background);
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  /* ========================================
+     BASE
+     ======================================== */
+
+  --background: oklch(0.985 0.003 247);
+  --foreground: oklch(0.145 0.015 260);
+
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: oklch(0.145 0.015 260);
+
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
+  --popover-foreground: oklch(0.145 0.015 260);
+
+  /* ========================================
+     PRIMARY - PEAK OS BLUE
+     ======================================== */
+
+  --primary: oklch(0.58 0.22 255);
+  --primary-foreground: oklch(0.985 0.003 247);
+
+  /* ========================================
+     SECONDARY
+     ======================================== */
+
+  --secondary: oklch(0.965 0.008 247);
+  --secondary-foreground: oklch(0.25 0.02 260);
+
+  /* ========================================
+     MUTED
+     ======================================== */
+
+  --muted: oklch(0.965 0.008 247);
+  --muted-foreground: oklch(0.52 0.025 260);
+
+  /* ========================================
+     ACCENT / SELECTED
+     ======================================== */
+
+  --accent: oklch(0.95 0.025 255);
+  --accent-foreground: oklch(0.42 0.15 255);
+
+  /* ========================================
+     BORDERS / INPUTS
+     ======================================== */
+
+  --border: oklch(0.91 0.012 247);
+  --input: oklch(0.91 0.012 247);
+  --ring: oklch(0.58 0.22 255);
+
+  /* ========================================
+     SUCCESS
+     ======================================== */
+
+  --success: oklch(0.68 0.18 145);
+  --success-foreground: oklch(0.25 0.08 145);
+  --success-backgroundv2: oklch(97.027% 0.04902 148.025);
+  --success-background: oklch(98.673% 0.01886 163.276);
+  --success-border: oklch(0.89 0.08 145);
+
+  /* ========================================
+     WARNING / IN-PROGRESS
+     ======================================== */
+
+  --warning: oklch(0.76 0.16 80);
+  --warning-foreground: oklch(0.35 0.08 80);
+
+  --warning-background: oklch(0.98 0.035 85);
+  --warning-border: oklch(0.92 0.08 85);
+
+  /* ========================================
+     DESTRUCTIVE
+     ======================================== */
+
+  --destructive: oklch(0.62 0.22 25);
+  --destructive-foreground: oklch(0.985 0.003 247);
+
+  --destructive-background: oklch(0.97 0.025 25);
+  --destructive-border: oklch(0.9 0.07 25);
+
+  /* ========================================
+     BLUE SURFACES
+     ======================================== */
+
+  --blue-background: oklch(0.965 0.025 255);
+  --blue-border: oklch(0.89 0.06 255);
+
+  --blue-subtle: oklch(0.975 0.012 255);
+
+  /* ========================================
+     NUTRITION
+     ======================================== */
+
+  /* Calories */
+  --calories: oklch(0.58 0.22 255);
+  --calories-background: oklch(0.965 0.025 255);
+
+  /* Protein */
+  --protein: oklch(0.68 0.18 145);
+  --protein-background: oklch(0.965 0.035 145);
+
+  /* Carbs */
+  --carbs: oklch(0.58 0.2 255);
+  --carbs-background: oklch(0.965 0.025 255);
+
+  /* Fat */
+  --fat: oklch(0.76 0.16 80);
+  --fat-background: oklch(0.98 0.035 85);
+
+  /* ========================================
+     CHARTS
+     ======================================== */
+
+  --chart-1: oklch(0.58 0.22 255);
+  --chart-2: oklch(0.68 0.18 145);
+  --chart-3: oklch(0.76 0.16 80);
+  --chart-4: oklch(0.62 0.2 290);
+  --chart-5: oklch(0.62 0.22 25);
+
+  /* ========================================
+     SIDEBAR
+     ======================================== */
+
+  --sidebar: oklch(1 0 0);
+  --sidebar-foreground: oklch(0.145 0.015 260);
+
+  --sidebar-primary: oklch(0.58 0.22 255);
+  --sidebar-primary-foreground: oklch(0.985 0.003 247);
+
+  --sidebar-accent: oklch(0.95 0.025 255);
+  --sidebar-accent-foreground: oklch(0.42 0.15 255);
+
+  --sidebar-border: oklch(0.91 0.012 247);
+  --sidebar-ring: oklch(0.58 0.22 255);
+
+  /* ========================================
+     RADIUS
+     ======================================== */
+
   --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
 }
 
 .dark {
@@ -115,6 +252,24 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+
+  /* --success-background: ...;
+  --success-border: ...;
+
+  --warning-background: ...;
+  --warning-border: ...;
+
+  --destructive-background: ...;
+  --destructive-border: ...;
+
+  --blue-background: ...;
+  --blue-border: ...;
+  --blue-subtle: ...;
+
+  --calories-background: ...;
+  --protein-background: ...;
+  --carbs-background: ...;
+  --fat-background: ...; */
 }
 
 @layer base {
