@@ -61,9 +61,21 @@
   --color-destructive-background: var(--destructive-background);
   --color-destructive-border: var(--destructive-border);
 
+  --color-purple-background: var(--purple-background);
+  --color-purple-backgroundv2: var(--purple-backgroundv2);
+  --color-purple-dark: var(--purple-dark);
+  --color-purple-border: var(--purple-border);
+  --color-purple-subtle: var(--purple-subtle);
+
   --color-blue-background: var(--blue-background);
-  --color-blue-border: var(--blue-border);
+  --color-blue-backgroundv2: var(--blue-backgroundv2);
+  --color-blue-dark: var(--blue-dark);
   --color-blue-subtle: var(--blue-subtle);
+
+  --color-orange-background: var(--orange-background);
+  --color-orange-backgroundv2: var(--orange-backgroundv2);
+  --color-orange-dark: var(--orange-dark);
+  --color-orange-subtle: var(--orange-subtle);
 
   --color-calories: var(--calories);
   --color-calories-background: var(--calories-background);
@@ -132,10 +144,10 @@
      SUCCESS
      ======================================== */
 
-  --success: oklch(0.68 0.18 145);
+  --success: oklch(0.6161 0.1366 158.35);
   --success-foreground: oklch(0.25 0.08 145);
-  --success-backgroundv2: oklch(97.027% 0.04902 148.025);
-  --success-background: oklch(98.673% 0.01886 163.276);
+  --success-backgroundv2: oklch(0.9576 0.0217 167.48);
+  --success-background: oklch(0.9881 0.0042 197.09);
   --success-border: oklch(0.89 0.08 145);
 
   /* ========================================
@@ -159,17 +171,26 @@
   --destructive-border: oklch(0.9 0.07 25);
 
   /* ========================================
-     BLUE SURFACES
+     PURPLE SURFACES
      ======================================== */
+  --purple-dark: #4c41ed;
+  --purple-background: #4c41ed;
+  --purple-border: oklch(0.89 0.06 255);
+  --purple-backgroundv2: #eaeafd;
+  --purple-subtle: #faf9ff;
 
-  --blue-background: oklch(0.965 0.025 255);
-  --blue-border: oklch(0.89 0.06 255);
-
-  --blue-subtle: oklch(0.975 0.012 255);
+  --blue-dark: #2472df;
+  --blue-background: #2472df;
+  --blue-backgroundv2: #e2edfd;
+  --blue-subtle: #f6faff;
 
   /* ========================================
      NUTRITION
      ======================================== */
+  --orange-dark: #f56930;
+  --orange-background: #f56930;
+  --orange-backgroundv2: #feede2;
+  --orange-subtle: #fdfaf7;
 
   /* Calories */
   --calories: oklch(0.58 0.22 255);
@@ -262,9 +283,9 @@
   --destructive-background: ...;
   --destructive-border: ...;
 
-  --blue-background: ...;
-  --blue-border: ...;
-  --blue-subtle: ...;
+   --purple-background: ...;
+   --purple-border: ...;
+   --purple-subtle: ...;
 
   --calories-background: ...;
   --protein-background: ...;
